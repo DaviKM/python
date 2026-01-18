@@ -4,14 +4,21 @@ while tipo != "A" and tipo != "B":
 
 tamanho = int(input("Insira o tamanho do triângulo: "))
 
-i = 0
-
-
 if tipo == "A" :
+    i = 0
     while i < tamanho:
         j = 0
         while j < i + 1:
             print("*", end="")
             j += 1
         i += 1
+        print("\n", end="")
+if tipo == "B":
+    i = tamanho
+    while i > 0 :
+        j = 0
+        while j < i :
+            print("*", end="")
+            j += 1
+        i -= 1
         print("\n", end="")
